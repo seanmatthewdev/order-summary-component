@@ -1,0 +1,137 @@
+/* Root */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+  --font: "Red Hat Display", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Root */
+body {
+  background: url(./images/pattern-background-desktop.svg) no-repeat
+    var(--Paleblue);
+  background-size: 100%;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  font-family: var(--font);
+  letter-spacing: 0.75px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-hero img {
+  width: 100%;
+}
+
+.card-hero {
+  margin-bottom: 2rem;
+}
+
+.card-details {
+  text-align: center;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-details h3 {
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+  font-weight: 900;
+  color: var(--Darkblue);
+}
+
+.card-details p {
+  font-size: 0.9rem;
+  color: var(--Desaturatedblue);
+}
+
+.card-plan {
+  width: 336px;
+  display: flex;
+  align-items: center;
+  background-color: var(--Verypaleblue);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.card-plan img {
+  padding-right: 1rem;
+}
+
+.plan-info {
+  margin-right: 4rem;
+}
+
+.plan-info h5 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+  color: var(--Darkblue);
+}
+
+.plan-info p {
+  font-size: 0.85rem;
+  color: var(--Desaturatedblue);
+}
+
+.change {
+  color: var(--Brightblue);
+  font-size: 00.9rem;
+  font-weight: 700;
+}
+
+.change a {
+  text-decoration: underline;
+  color: inherit;
+}
+.card-buttons {
+  text-align: center;
+}
+
+.card-buttons button {
+  width: 336px;
+  padding: 1rem;
+  border-style: none;
+  background-color: var(--Brightblue);
+  color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card-buttons p {
+  margin-bottom: 2rem;
+  color: var(--Desaturatedblue);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.card-buttons p a {
+  text-decoration: none;
+  color: inherit;
+}
